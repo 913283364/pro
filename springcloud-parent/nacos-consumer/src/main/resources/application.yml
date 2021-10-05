@@ -1,0 +1,12 @@
+# 配置应用基本信息 和 DB
+server:
+  port: 8070
+spring:
+  application:
+    name: nacos-consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+
+

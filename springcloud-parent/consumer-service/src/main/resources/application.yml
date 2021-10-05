@@ -1,0 +1,32 @@
+# 配置应用基本信息 和 DB
+server:
+  port: 8080
+spring:
+  application:
+    name: consumer-service
+  zipkin:
+    base-url: http://localhost:9411 #追踪到的信息可以到这个网站查看
+  sleuth:
+    sampler:
+      # 采样率值介于0 到 1 之间,1则表示全部采集
+      probability: 1
+
+
+# 配置eureka
+eureka:
+    client:
+        fetchRegistry: true
+        service-url:
+         defaultZone: http://eureka8761.com:8761/eureka/,http://eureka8762.com:8762/eureka/
+    instance:
+       prefer-ip-address: true
+
+feign:
+  hystrix: #在feign中开启hystrix熔断
+   enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

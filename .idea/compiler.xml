@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="alibaba-provider" />
+        <module name="cloud-config" />
+        <module name="cloud-config-client" />
+        <module name="cloud-config-client02" />
+        <module name="consumer-service" />
+        <module name="eureka_server" />
+        <module name="eureka_server02" />
+        <module name="gateway-service" />
+        <module name="hystrix-turbine" />
+        <module name="nacos-consumer" />
+        <module name="nacos-provider" />
+        <module name="nacos-provider02" />
+        <module name="provider-service" />
+        <module name="provider-service02" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="alibaba-provider" target="1.8" />
+      <module name="cloud-config" target="1.8" />
+      <module name="cloud-config-client" target="1.8" />
+      <module name="cloud-config-client02" target="1.8" />
+      <module name="consumer-service" target="1.8" />
+      <module name="eureka_server" target="1.8" />
+      <module name="eureka_server02" target="1.8" />
+      <module name="gateway-service" target="1.8" />
+      <module name="hystrix-turbine" target="1.8" />
+      <module name="nacos-consumer" target="1.8" />
+      <module name="nacos-provider" target="1.8" />
+      <module name="nacos-provider02" target="1.8" />
+      <module name="provider-service" target="1.8" />
+      <module name="provider-service02" target="1.8" />
+      <module name="springcloud-parent" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

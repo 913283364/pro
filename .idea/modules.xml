@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/springcloud-parent/cloud-config/cloud-config.iml" filepath="$PROJECT_DIR$/springcloud-parent/cloud-config/cloud-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-parent/cloud-config-client/cloud-config-client.iml" filepath="$PROJECT_DIR$/springcloud-parent/cloud-config-client/cloud-config-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-parent/cloud-config-client02/cloud-config-client02.iml" filepath="$PROJECT_DIR$/springcloud-parent/cloud-config-client02/cloud-config-client02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-parent/consumer-service/consumer-service.iml" filepath="$PROJECT_DIR$/springcloud-parent/consumer-service/consumer-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-parent/eureka_server/eureka_server.iml" filepath="$PROJECT_DIR$/springcloud-parent/eureka_server/eureka_server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-parent/eureka_server02/eureka_server02.iml" filepath="$PROJECT_DIR$/springcloud-parent/eureka_server02/eureka_server02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-parent/gateway-service/gateway-service.iml" filepath="$PROJECT_DIR$/springcloud-parent/gateway-service/gateway-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-parent/hystrix-turbine/hystrix-turbine.iml" filepath="$PROJECT_DIR$/springcloud-parent/hystrix-turbine/hystrix-turbine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-parent/nacos-consumer/nacos-consumer.iml" filepath="$PROJECT_DIR$/springcloud-parent/nacos-consumer/nacos-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-parent/nacos-provider/nacos-provider.iml" filepath="$PROJECT_DIR$/springcloud-parent/nacos-provider/nacos-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-parent/nacos-provider02/nacos-provider02.iml" filepath="$PROJECT_DIR$/springcloud-parent/nacos-provider02/nacos-provider02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-parent/provider-service/provider-service.iml" filepath="$PROJECT_DIR$/springcloud-parent/provider-service/provider-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-parent/provider-service02/provider-service02.iml" filepath="$PROJECT_DIR$/springcloud-parent/provider-service02/provider-service02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-parent/springcloud-parent.iml" filepath="$PROJECT_DIR$/springcloud-parent/springcloud-parent.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,39 @@
+# 获取端口，port:9091
+server:
+  port: ${port:9091}
+# DB 配置
+spring:
+  application:
+    name: provider-service
+
+  zipkin:
+      base-url: http://localhost:9411  #追踪到的信息可以到这个网站查看
+  sleuth:
+    sampler:
+      probability: 1
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/springcloud?serverTimezone=UTC&characterEncoding=utf8
+    password: root
+    username: root
+
+# 配置eureka
+eureka:
+     client:
+       fetchRegistry: true
+       service-url:
+         #设置与Eureka Server交互的地址,用于查询服务和注册服务
+         defaultZone: http://eureka8761.com:8761/eureka/, http://eureka8762.com:8762/eureka/
+
+     instance:
+       prefer-ip-address: true
+       # 显示真实IP地址
+       instance-id: ${spring.cloud.client.ip-address}:${server.port}
+
+
+# 扫描实体
+mybatis:
+  type-aliases-package: cn.it.domain
+  # mapper.xml配置文件路径
+  #mapper-locations: classpath:mapper/*Mapper.xml

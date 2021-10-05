@@ -1,0 +1,35 @@
+server:
+  port: 3355
+
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      label: master #分支名称
+      name: config  #配置文件名称
+      profile: test  #读取后缀名称
+      uri: http://localhost:3344  #配置中心
+      #上述3个综合就是：    master分支上的config-test.yml配置文件被读取
+      #它访问的路径其实是： http://localhost:3344/master/config-test.yml
+
+  #RabbitMq相关配置,15672是Web界面管理的端口,5672是连接MQ的端口
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+
+# 配置eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+# 可以发现监控断点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

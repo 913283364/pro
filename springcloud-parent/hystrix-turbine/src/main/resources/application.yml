@@ -1,0 +1,19 @@
+server:
+  port: 8031
+
+spring:
+  application:
+    name: hystrix-turbine
+
+eureka:
+   client:
+     service-url:
+       defaultZone: http://eureka8761.com:8761/eureka/, http://eureka8762.com:8762/eureka/
+   instance:
+     prefer-ip-address: true
+
+#turbine会自动的从注册中心中获取需要监控的微服务,并聚合所有微服务中的/hystrix.stream数据
+turbine:
+   # 输入要监控的微服务列表，多个服务使用逗号分隔
+   app-config: consumer-service
+   cluster-name-expression: "'default'"
